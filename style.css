@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "Lucida Sans", sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.calendar {
+    width: 67%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.month {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #EB6E23;
+}
+
+.month h1 {
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.month p {
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #eb7b23;
+}
+
+.weekdays p {
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 75px;
+}
+
+.day {
+    background-color: #ffe1c9;
+    border: solid 1px #ffc292;
+}
+
+.day p {
+    padding: 3px;
+    font-weight: 500;
+    color: #a45619;
+    font-size: 0.8rem;
+}
+
+.day .not-current-month {
+    color: #a4551980;
+}
+
+.right-side {
+    width: 33%;
+    margin: 0 auto;
+}
+
+.details-create, .details-description {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+em {
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+.details-description {
+    display: none;
+}
+
+.details-create h2, .details-description h2 {
+    padding: 20px 0;
+}
+
+.details-create p, .details-description p {
+    color: #a45619;
+    font-weight: 600;
+}
+
+input, select, textarea {
+    border: solid 1px #a45619;
+    padding: 7px;
+    margin-bottom: 15px;
+}
+
+.details-description div {
+    padding: 7px 0;
+    margin-bottom: 15px;
+}
+
+textarea::placeholder {
+    color: #a4551980;
+}
+
+button {
+    padding: 7px;
+    font-weight: 600;
+    background-color: #eba323;
+    border: solid 1px #a47219;
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Evento įrašas kalendoriuje */
+.day div p {
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 0.7rem;
+    color: black;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.meeting {
+    background-color: #23c6eb;
+}
+
+.call {
+    background-color: #198ba4;
+}
+
+.out-of-office {
+    background-color: #a47219;
+}
+
+@media all and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+    .calendar {
+        width: 100%;
+    }
+    .right-side {
+        width: 75%;
+    }
+}
