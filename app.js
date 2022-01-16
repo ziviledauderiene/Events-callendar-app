@@ -129,3 +129,4 @@ function addEvent() {
 //  - renginius dėlioti pagal laiką. Kuris ankstesnis tas langelyje aukščiau rodomas.
 //  - kad būtų galima įvesti vienodus pavadinimus ???
 //  - gražesnį perėjimą create-display, kad ne du kartus spaudinėt. 
+//  - nenaudoti onclick HTML faile. Daryti addEventListener()
