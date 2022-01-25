@@ -2,7 +2,7 @@
 This a personal calendar application created using:
 - HTML;
 - CSS (grid, flexbox);
-- JavaScript (JSON, sessionStorage, loops, functions).
+- JavaScript (JSON, sessionStorage, loops, functions, events).
 
 There is a possibility to add and delete events.
 
