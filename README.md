@@ -1,6 +1,6 @@
 # Events-callendar-app
 This a personal calendar application created using:
-- HTML;
+- HTML5;
 - CSS (grid, flexbox);
 - JavaScript (JSON, sessionStorage, loops, functions).
 
